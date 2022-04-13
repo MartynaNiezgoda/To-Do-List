@@ -1,11 +1,24 @@
 .list {
-
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 0;
 }
 
 .list__item {
-
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 0 8px 8px;
 }
 
-.list__item--done {
+.list__item-content {
+    flex-grow: 1;
+    padding: 0 16px;
+    word-break: break-word;
+}
+
+.list__item-content--done {
     text-decoration: line-through;
 }
